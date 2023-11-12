@@ -53,7 +53,7 @@ body:
       required: false
 
   - type: textarea
-    id: dependenceis
+    id: dependencies
     attributes:
       label: Dependencies
       description: What should be done before getting the design done?
@@ -67,21 +67,18 @@ body:
     id: details
     attributes:
       label: Details
-      description: What should be done before getting the design done?
-      placeholder: |
-        - This
-        - That
-    validations:
-      required: true
-
-  - type: textarea
-    id: details
-    attributes:
-      label: Details
-      description: What should be done before getting the design done?
-      placeholder: |
-        - This
-        - That
+      description: |
+        The design has a free form, this is a list that should be considered while writing it:
+        - Failure scenarios
+        - Limitations
+        - UI changes (wireframes, links to mockups)
+        - Requirements
+        - Concerns
+        - Error handling
+        - Scaling
+        - Fault Recovery
+        - Links to spikes
+        - List of metrics to capture
     validations:
       required: true
 
@@ -90,7 +87,7 @@ body:
     attributes:
       label: FAQ
       description: Questions and (optionally) a current status of answer. There should be a question either from others or yours.
-      placeholder: |
+      value: |
         <details><summary>q?</summary>
         <p>
 
@@ -118,6 +115,7 @@ body:
         - https://www.
     validations:
       required: false
+
   - type: textarea
     id: participants
     attributes:
