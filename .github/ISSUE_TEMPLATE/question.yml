@@ -1,0 +1,18 @@
+name: Question
+description: Ask a question related with project, describe a general problem or lack of feature which requires more information so does not fit the other templates.
+title: "Question: "
+assignees:
+  - Prastiwar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We're sorry if anything in our process is not clear and concise, ask freely what is on your mind.
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide a more detailed introduction to the issue itself. Why do you consider it as a problem? Wht is your idea how should it be resolved?
+    validations:
+      required: true

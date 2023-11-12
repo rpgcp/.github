@@ -1,0 +1,129 @@
+name: Design Specification
+description: Create a design specification issue related to new feature.
+title: "Design: "
+labels: ["design", "documentation"]
+projects: ["rpgcp/1"]
+assignees:
+  - Prastiwar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The design specification describes both, a high-level AND technical aspects to apply a set of changes or implement a new feature.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the reasons of described design solution, origin of the problem, how it affects others or any other relatively short information.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is the scope of the design?
+      placeholder: |
+        - This
+        - That
+    validations:
+      required: true
+
+  - type: textarea
+    id: outscope
+    attributes:
+      label: Out of Scope
+      description: What is not included in the design?
+      placeholder: |
+        - This
+        - That
+    validations:
+      required: false
+
+  - type: textarea
+    id: legend
+    attributes:
+      label: Legend
+      description: Explain the meaning of used contextual words in the design.
+      placeholder: |
+        - This - that
+        - That - that
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependenceis
+    attributes:
+      label: Dependencies
+      description: What should be done before getting the design done?
+      placeholder: |
+        - This
+        - That
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What should be done before getting the design done?
+      placeholder: |
+        - This
+        - That
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What should be done before getting the design done?
+      placeholder: |
+        - This
+        - That
+    validations:
+      required: true
+
+  - type: textarea
+    id: faq
+    attributes:
+      label: FAQ
+      description: Questions and (optionally) a current status of answer. There should be a question either from others or yours.
+      placeholder: |
+        <details><summary>q?</summary>
+        <p>
+
+        a
+
+        </p>
+        </details>
+        
+        <details><summary>q?</summary>
+        <p>
+
+        a
+
+        </p>
+        </details>
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to documents, discussions or other resources that you used to create this design.
+      placeholder: |
+        - https://www.
+    validations:
+      required: false
+  - type: textarea
+    id: participants
+    attributes:
+      label: Participants
+      description: People involved in the design - authors, reviewers, supporters.
+      placeholder: |
+        - me
+    validations:
+      required: true

@@ -1,0 +1,48 @@
+name: Task
+description: Create an empty generic issue related to project work.
+title: "Task: "
+labels: ["task"]
+projects: ["rpgcp/1"]
+assignees:
+  - Prastiwar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The spike is welcomed relatively short R&D work usually comes as an addition to a design specification.
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related
+      description: A links to the related design specifications, spikes or other tasks.
+      placeholder: |
+        - #1
+        - #2
+    validations:
+      required: false
+
+  - type: textarea
+    id: requires
+    attributes:
+      label: Requires
+      description: A links to the related design specifications, spikes or other tasks that needs to be finished before the task can be done.
+      placeholder: |
+        - #1
+    validations:
+      required: false
+
+  - type: input
+    id: header
+    attributes:
+      label: Header
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide a more detailed introduction to the task itself. What exactly should be done in scope of the task? What are the acceptance criteria?
+    validations:
+      required: true

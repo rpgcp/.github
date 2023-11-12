@@ -1,0 +1,45 @@
+name: Spike
+description: Create a spike for a future (or existing) design specification.
+title: "Spike: "
+labels: ["design"]
+projects: ["rpgcp/1"]
+assignees:
+  - Prastiwar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The spike is welcomed relatively short R&D work usually comes as an addition to a design specification.
+
+  - type: input
+    id: related
+    attributes:
+      label: Related
+      description: A link to the related design specification itself.
+      placeholder: |
+        - #1
+    validations:
+      required: false
+
+  - type: input
+    id: header
+    attributes:
+      label: Header
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide a more detailed introduction to the spike itself, what exactly is being researched there.
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Include verdict on spiked problem.
+    validations:
+      required: true

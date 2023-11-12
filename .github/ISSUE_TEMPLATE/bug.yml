@@ -1,0 +1,52 @@
+name: Bug Report
+description: Report a bug or unexpected behavior to help us improve the project.
+title: "Bug: "
+labels: ["bug"]
+projects: ["rpgcp/1"]
+assignees:
+  - Prastiwar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for a time to document the bug and share. It allows us to improve the project.
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What is the actual behaviour of the system? How does it behave in described situation?
+      placeholder: |
+        Currently it ..
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: How do you expect the system to work on it? How should it behave in described situation?
+      placeholder: |
+        I expect it to ..
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduce steps
+      description: Provide a link to a live example, or an unambiguous set of steps to reproduce this bug.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Provide some more information to the issue itself. Why do you consider it to be a bug? Is there something you can suggest to fix it?
+    validations:
+      required: false
